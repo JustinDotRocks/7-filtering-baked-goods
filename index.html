@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter</title>
+    <link rel="stylesheet" href="filtering.css" />
+</head>
+<body>
+    <div id="filtering-container">
+        <h1 id="store-header">Our Store</h1>
+        <div id="store-buttons-container">
+            <button id="all-button" class="items-button all-button" data-filter="all">All</button>
+            <button id="cakes-button" class="items-button cakes-button" data-filter="cakes">Cakes</button>
+            <button id="cupcakes-button" class="items-button cupcakes-button" data-filter="cupcakes">Cupcakes</button>
+            <button id="sweets-button" class="items-button sweets-button" data-filter="sweets">Sweets</button>
+            <button id="doughnuts-button" class="items-button doughnuts-button" data-filter="doughnuts">Doughnuts</button>
+        </div>
+        <div id="search-container">
+            <form id="input-form">
+                <button id="search-button">Search</button>
+                <input id="input"/>
+            </form>
+        </div>
+
+
+        <div id="products-container" >
+            <div class="product-container doughnuts" data-item="doughnuts">
+                <img class="product-image" src="./img/item-0.jpeg" width="300"/>
+                <div class="item-info-container">
+                    <h3 class="item-name">Animal Doughnut</h3>
+                    <p class="item-price">$5</p>
+                </div>
+            </div>
+            <div class="product-container cupcakes" data-item="cupcakes">
+                <img class="product-image" src="./img/item-4.jpeg" width="300"/>
+                <div class="item-info-container">
+                    <h3 class="item-name">Frosted Cupcakes</h3>
+                    <p class="item-price">$10</p>
+                </div>
+            </div>
+            <div class="product-container doughnuts" data-item="doughnuts">
+                <img class="product-image" src="./img/item-7.jpeg" width="300"/>
+                <div class="item-info-container">
+                    <h3 class="item-name">Frosted Doughnut</h3>
+                    <p class="item-price">$5</p>
+                </div>
+            </div>
+            <div class="product-container cakes" data-item="cakes">
+                <img class="product-image" src="./img/item-1.jpeg" width="300"/>
+                <div class="item-info-container">
+                    <h3 class="item-name">Multi-layered Cake</h3>
+                    <p class="item-price">$30</p>
+                </div>
+            </div>
+            <div class="product-container cupcakes" data-item="cupcakes">
+                <img class="product-image" src="./img/item-5.jpeg" width="300"/>
+                <div class="item-info-container">
+                    <h3 class="item-name">Chocolate Cupcakes</h3>
+                    <p class="item-price">$10</p>
+                </div>
+            </div>
+            <div class="product-container sweets" data-item="sweets">
+                <img class="product-image" src="./img/item-10.jpeg" width="300"/>
+                <div class="item-info-container">
+                    <h3 class="item-name">Homemade Candy</h3>
+                    <p class="item-price">$5</p>
+                </div>
+            </div>
+            <div class="product-container cupcakes" data-item="cupcakes">
+                <img class="product-image" src="./img/item-6.jpeg" width="300"/>
+                <div class="item-info-container">
+                    <h3 class="item-name">Pearl Cupcakes</h3>
+                    <p class="item-price">$10</p>
+                </div>
+            </div>
+            <div class="product-container sweets" data-item="sweets">
+                <img class="product-image" src="./img/item-9.jpeg" width="300"/>
+                <div class="item-info-container">
+                    <h3 class="item-name">macaroons</h3>
+                    <p class="item-price">$15</p>
+                </div>
+            </div>
+            <div class="product-container cakes" data-item="cakes">
+                <img class="product-image" src="./img/item-3.jpeg" width="300"/>
+                <div class="item-info-container">
+                    <h3 class="item-name">Pink Frosted Cake</h3>
+                    <p class="item-price">$35</p>
+                </div>
+            </div>
+            <div class="product-container sweets" data-item="sweets">
+                <img class="product-image" src="./img/item-11.jpeg" width="300"/>
+                <div class="item-info-container">
+                    <h3 class="item-name">Homemade Chocolate</h3>
+                    <p class="item-price">$25</p>
+                </div>
+            </div>
+            <div class="product-container cakes" data-item="cakes">
+                <img class="product-image" src="./img/item-2.jpeg" width="300"/>
+                <div class="item-info-container">
+                    <h3 class="item-name">Fancy Cake</h3>
+                    <p class="item-price">$55</p>
+                </div>
+            </div>
+            <div class="product-container doughnuts" data-item="doughnuts">
+                <img class="product-image" src="./img/item-8.jpeg" width="300"/>
+                <div class="item-info-container">
+                    <h3 class="item-name">Assorted Doughnuts: 4 pack</h3>
+                    <p class="item-price">$18</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-container">
+        <div class="image-container">
+            <img />
+        </div>
+    </div>
+
+    <script src="filtering.js"></script>
+</body>
+</html>
